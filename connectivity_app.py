@@ -22,7 +22,7 @@ def load_data(file_bytes) -> pd.DataFrame:
         if lat is None or lon is None:
             continue
         # connectivity & timestamp
-        conn = "yes" if "LoRaWANSend" in e else "no"
+        conn = "yes" if "true" in e else "no"
         y,mo,d = e.get("year",0), e.get("month",0), e.get("day",0)
         h,mi,s = e.get("hour",0), e.get("minute",0), e.get("second",0)
         ts = (
