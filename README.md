@@ -42,10 +42,11 @@ lorawan-map/
 
 ###  Features
 
+- **Scan and Record LoRaWAN connectivity** Either store data onboard the SD or pull from The Things Network for custom database integration
 - **Battery‑aware operation**: real‑time voltage monitoring and on‑screen battery bar  
 - **Dual scan modes** (“Drive” vs “Walk”) with adaptive transmit intervals (15 s vs 60 s)  
 - **Non‑blocking UI controls**: five‑button D‑pad menu navigation with hardware‑debounced inputs  
-- **Persistent storage**: 32 kB FRAM for network session state + SD card for full JSON logging  
+- **Persistent storage**: 32 kB FRAM for network session state (optional) + SD card for full JSON logging  
 - **Plug‑and‑play web front‑end**: drag‑and‑drop `.txt` logs to visualize GPS tracks, timestamps and sensor graphs  
 
 ---
