@@ -1,5 +1,5 @@
 # LoRaWAN Tracker
-*Modified Spring 2025 by Jack Long for MAE 4220: IoT, Cornell University*
+*Modified Spring 2025 by Jack Long, Charlie Hart, Aleira Sanchez, Chloe Teig for MAE 4220: IoT, Cornell University*
 *Originally by Alex Coy, ECE 4950 TA for Spring 2021*
 
 A one‑stop repository for everything you need to build, deploy, and visualize data from our GPS LoRaWAN tracker:
