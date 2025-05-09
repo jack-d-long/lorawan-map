@@ -48,7 +48,7 @@ if uploaded:
     st.success(f"Loaded {len(df)} points.")
 
     
-    # 5️⃣ Prepare colors
+    #  Prepare colors
     df["color"] = df["connected"].map({
         "yes": [0, 200, 0],
         "no":  [200, 0, 0]
@@ -56,7 +56,7 @@ if uploaded:
 
     df["radius"] = df["connected"].apply(lambda c: 15 if c == "yes" else 5)
 
-    # 6️⃣ Initial camera view at the most recent measurement
+    # nitial camera view at the most recent measurement
     latest = df.iloc[-1]
     initial_view = pdk.ViewState(
         latitude  = latest["latitude"],
@@ -65,7 +65,7 @@ if uploaded:
         pitch     = 0
     )
 
-    # 7️⃣ Create the GPU‐accelerated scatter layer
+    # Create the scatter layer
     scatter = pdk.Layer(
     "ScatterplotLayer",
     data            = df,
@@ -90,4 +90,4 @@ if uploaded:
 
     st.pydeck_chart(deck)
 else:
-    st.info("Upload your TXT file to render 15 000+ points at GPU speeds.")
+    st.info("Upload the TXT file from your LoRaWAN Tracker to render 15 000+ points at high speeds.")

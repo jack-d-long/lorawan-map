@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "feather_sd_sam_m8q-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/feather_sd_sam_m8q-eagle-import.kicad_sym")(options "")(descr ""))
+)
