@@ -8,11 +8,12 @@ A one‑stop repository for everything you need to build, deploy, and visualize 
   A lightweight web application for ingesting the raw `.txt` logs off the tracker’s onboard SD card and rendering an interactive, real‑time map of your device’s journey.
 
 - **Tracker Hardware** (`tracker‑hardware/`)  
-  - **CAD** (`tracker‑hardware/cad/`)  
+  - **Shell** (`tracker‑hardware/shell_CAD/`)  
     Fully parametric OpenSCAD/STEP files and detailed drawings for 3D‑printing or CNC fabrication of the tracker enclosure.  
   - **Firmware** (`tracker‑hardware/firmware/`)  
     PlatformIO‑compatible C/C++ code for the microcontroller: SD‑card logger, GNSS reader, LoRaWAN uplink, and low‑power sleep modes with GUI.
-
+  - **Purple Board** (`tracker‑hardware/firmware/`)
+    KiCAD-compatible files for manufacture and assembly of the EERL 'Purple Board' PCB by Alex Coy, current as of May 2025. 
 ---
 
 ## Repository Structure
@@ -77,24 +78,20 @@ lorawan-map/
 
 ## Usage
 
-1. Clone the repo
-
+**1. Clone the repo**
 ```
 git clone https://github.com/jack-d-long/lorawan-map.git
 cd lorawan-map
 ```
 
-2. Build the tracker
-
+**2. Build the tracker**
 - Purchase components, print shell, assemble. 
 - Flash firmware with Arduino IDE
 
-3. Use the tracker
-
+**3. Use the tracker**
 - Collect data on LoRaWAN connectivity in your local area
 
-4. Set up the map app
-
+**4. Set up the map app**
 - Create and activate a Python environment 
 
 ```
@@ -114,11 +111,10 @@ pip install \
   jsonschema  # optional: validate JSON if you extend
 ```
 
-5. Read your stored data card with the map app
-
+**5. Read your stored data card with the map app**
 - Run the app
 
-6. Read your data on the cloud via TTN 
+**6. Read your data on the cloud via TTN**
 
 - Set up TTN by following Labs 3, 4, 5, and 6 of [this tutorial](https://pages.github.coecis.cornell.edu/LPWAN-Training/training-labs/lab3), or equivalent
 - Pipe your data via MQTT to the database of your choice for live retrieval 
