@@ -64,7 +64,7 @@ lorawan-map/
 
 ### Software Requirements
 
-- **Arduino IDE** (or PlatformIO) with Adafruit SAMD core  
+- **Arduino IDE**   
 - Libraries:  
   - `Arduino_LoRaWAN_ttn` + `lmic`  
   - `Adafruit GFX` & `Adafruit SH110X`  
