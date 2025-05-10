@@ -87,7 +87,8 @@ cd lorawan-map
 ```
 
 **2. Build the tracker**
-- Purchase components, print shell, assemble. 
+- Purchase components, print shell, assemble.
+  - Printed with PLA at 0.2 mm layer height, tree supports
 - Flash firmware with Arduino IDE
 
 **3. Use the tracker**
