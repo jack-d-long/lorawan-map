@@ -119,18 +119,7 @@ streamlit run connectivity_app.py
 
 
 
-
 **6. Read your data on the cloud via TTN**
 
 - Set up TTN by following Labs 3, 4, 5, and 6 of [this tutorial](https://pages.github.coecis.cornell.edu/LPWAN-Training/training-labs/lab3), or equivalent
 - Pipe your data via MQTT to the database of your choice for live retrieval 
-
-
-
-```
-streamlit run connectivity_app.py
-
-```
-- In your browser, go to http://localhost:8501
-- Upload your GPS/LoRaWAN log file (.txt newline‑delimited JSON).
-- Watch the map render instantly—and pan, zoom or hover for details.
