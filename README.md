@@ -95,14 +95,6 @@ cd lorawan-map
 - Collect data on LoRaWAN connectivity in your local area
 
 **4. Set up the map app**
-- Create and activate a Python environment 
-
-```
-python3 -m venv venv
-source venv/bin/activate
-
-```
-
 - Install dependencies
 
 ```
