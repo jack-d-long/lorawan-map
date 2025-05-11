@@ -57,10 +57,11 @@ lorawan-map/
 - **"Purple Board"**: EERL PCB (source included)
 - **Display**: [SH1106 128×64 I²C OLED](https://www.aliexpress.us/item/3256806846801359.html?src=google&pdp_npi=4%40dis%21USD%216.32%213.11%21%21%21%21%21%40%2112000039161970280%21ppc%21%21%21&src=google&albch=shopping&acnt=708-803-3821&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=en3256806846801359&ds_e_product_merchant_id=5388525816&ds_e_product_country=US&ds_e_product_language=en&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=20123152476&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=20127768206&gbraid=0AAAAAD6I-hE0CYYoGWDb82JdLxJdh6HZj&gclid=Cj0KCQjwrPHABhCIARIsAFW2XBMoG-_e8-ALzsrb52M93WnFTvrb6fn9T6qEIRYuo83KG5EKEKTS-N8aAq3UEALw_wcB&gatewayAdapt=glo2usa)
 - **GPS**: u‑blox SAM‑M8Q module ([Sparkfun breakout](https://www.sparkfun.com/sparkfun-gps-breakout-chip-antenna-sam-m8q-qwiic.html))  
-- **Storage**: [MicroSD card breakout](https://www.amazon.com/UMLIFE-Interface-Conversion-Compatible-Raspberry/dp/B0989SM146) + MCCI Catena cFram32k FRAM (optional)
+- **Storage**: [MicroSD card breakout](https://www.amazon.com/UMLIFE-Interface-Conversion-Compatible-Raspberry/dp/B0989SM146) with Micro SD (>8GB) + MCCI Catena cFram32k FRAM (optional)
 - **Controls**: [PCA9554 I²C D‑Pad](https://www.sparkfun.com/sparkfun-qwiic-directional-pad.html) + [12mm latching pushbutton](https://www.amazon.com/Gebildet-Latcting-Lockable-Trumpet-Doorbell/dp/B07YDCJFZJ?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A86AD06S3OMVQ&gQT=0)
 - **Power**: 3.7 V 1S/3C LiPo battery (800-1000 mAh)   
 - **Enclosure**: 3D‑printed shell (source included)  
+
 
 ---
 
@@ -107,7 +108,17 @@ pip install \
 ```
 
 **5. Read your stored data card with the map app**
+- Read your tracker's SD storage with your computer
 - Run the app
+
+```
+streamlit run connectivity_app.py
+```
+- Drag and drop the `.txt` file from the SD into the app
+- Read your map!
+
+
+
 
 **6. Read your data on the cloud via TTN**
 
